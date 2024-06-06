@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
+import logo from '../assets/img/Logo/Nill logo work files lo.png'
+
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -27,10 +29,10 @@ const Navbar = () => {
   return (
     <div className=" fixed w-full z-10 text-white">
       <div>
-        <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <div className=" flex flex-row justify-between p-5 md:px-[5%] px-5 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className=" flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500}>
-              <h1 className=" text-2xl font-semibold text-black">NillQ.</h1>
+              <img src={logo} width={80} className="mr-[5%]"/>
             </Link>
           </div>
 
